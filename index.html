@@ -1,35 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="1.css">
-  <title>xiaoWei</title>
-</head>
-<body>
-<div id="sky">
-    <div class="bird">
-        <div class="wind"></div>
-        <div class="wind"></div>
-        <div class="wind"></div>
-        <div class="wind"></div>
-        <div class="wind"></div>
-        <div class="wind"></div>
-        <div class="wind"></div>
-        <div class="wind"></div>
-        <div class="wind"></div>
-        <div class="wind"></div>
-        <div class="bird_body">
-            <div class="bird_head"></div>
-            <div class="bird_wing_left">
-                <div class="bird_wing_left_top"></div>
-            </div>
-            <div class="bird_wing_right">
-                <div class="bird_wing_right_top"></div>
-            </div>
-            <div class="bird_tail_left"></div>
-            <div class="bird_tail_right"></div>
-        </div>
-    </div>
-</div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/application.css">
+		<link rel="stylesheet" type="text/css" href="css/1.css">
+		<!-- <script type="text/javascript" src="1.js"></script> -->
+		<title>Document</title>
+		<style type="text/css">
+			#sky{
+				display: none;
+				z-index: 9999;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div id="menu" class="ib-component" data-component="ib.Menu" >
+				<div class="canvas-background">
+					<div class="stalker-wrap" data-scheme-type="menu"></div>
+				</div>
+				<figure class="bottom-gradient"></figure>
+			</div>
+			<div id="splash">
+				<div class="wrapper">
+					<div class="content">
+						<figure class="load-priority" data-frames="82" data-stop-frame="59"></figure>
+						<div class="constrain">
+							<h1 class="text-effect">欢迎来到我的主页哈</h1>
+							<p class="text-effect"></p>
+							<p class="text-effect">emmmmmmmmmmm!</p>
+							<!-- <div class="pill alt-hover-2 determine-hover"><span>Continue</span></div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="preloader-overlay" class="ib-component" data-component="ib.PreloaderOverlay">
+				<div class="wrapper">
+					<figure class="logo"> </figure>
+				</div>
+			</div>
+		</main>
+		<script src="js/application.js"></script>
+		<div id="sky">
+			<!-- <p>欢迎来到我的网站</p> -->
+			<p>　</p>
+			<div class="bird">
+				<div class="wind"></div>
+				<div class="wind"></div>
+				<div class="wind"></div>
+				<div class="wind"></div>
+				<div class="wind"></div>
+				<div class="wind"></div>
+				<div class="wind"></div>
+				<div class="wind"></div>
+				<div class="wind"></div>
+				<div class="wind"></div>
+				<div class="bird_body">
+					<div class="bird_head"></div>
+					<div class="bird_wing_left">
+						<div class="bird_wing_left_top"></div>
+					</div>
+					<div class="bird_wing_right">
+						<div class="bird_wing_right_top"></div>
+					</div>
+					<div class="bird_tail_left"></div>
+					<div class="bird_tail_right"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var t=setTimeout(function(){
+				document.getElementById("sky").style="display:block";
+			},8000);
+		</script>
+		<!-- <script type="text/javascript">
+			var t=setTimeout(function(){
+				var style = document.createElement("style");
+				style.type = "text/css";
+				try{
+				　　style.appendChild(document.createTextNode("#sky{display:block}"));
+				}catch(ex){
+				　　style.styleSheet.cssText = "#sky{display:block}";//针对IE
+				}
+				var head = document.getElementsByTagName("head")[0];
+				head.appendChild(style);
+			},8000);
+		</script> -->
+	</body>
 </html>
